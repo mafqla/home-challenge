@@ -17,6 +17,7 @@ const Login = () => {
                 localStorage.setItem('nickname', res.nickname)
                 localStorage.setItem('token', res['token'])
                 localStorage.setItem('username', res.username)
+                localStorage.setItem('avatar', res.avatar)
                 // 跳到首页
                 setTimeout(() => {
                     navigate('/')

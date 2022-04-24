@@ -18,3 +18,11 @@ export const register = data => {
     })
 
 }
+
+// 获取用户信息
+export const userinfo = ()=> {
+    return request({
+        url: "/userinfo"
+    })
+
+}

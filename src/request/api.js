@@ -20,9 +20,35 @@ export const register = data => {
 }
 
 // 获取用户信息
-export const userinfo = ()=> {
+export const userinfo = (data)=> {
     return request({
-        url: "/userinfo"
+        url: "/userinfo",
+        params:data
+    })
+
+}
+
+export const deleteUser = data => {
+    return request({
+        url: "/deleteUser",
+        method: "POST",
+        data:qs.stringify(data)
+    })
+
+}
+export const updateUserinfo = data => {
+    return request({
+        url: "/update-userinfo",
+        method: "POST",
+        data:qs.stringify(data)
+    })
+
+}
+export const adduser = data => {
+    return request({
+        url: "/addUserInfo",
+        method: "POST",
+        data:qs.stringify(data)
     })
 
 }
